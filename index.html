@@ -9,6 +9,8 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
   <script type="text/javascript" src="js/jquery.tiltedpage-scroll.js"></script>
+  <link rel="stylesheet" href="css/timeline.css">
+  <link rel="stylesheet" href="css/demo.css">
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -68,7 +70,9 @@
     <div id="contenido2" class="navContent" style="display: none;">
         <div class="main" style="text-align: center">
             <section class="page1">
-                <img src="imagenes/imagen1.jpg">
+                <video width="80%" height="600" controls>
+                    <source src="video/HA-ASH - 30 de Febrero.mp4" type="video/mp4">
+                </video>
             </section>
             <section class="page2">
                 <img src="imagenes/imagen1.jpg">
@@ -80,7 +84,22 @@
     </div>
 
     <div id="contenido3" class="navContent" style="display: none;">
-        hola3
+        <div class="timeline-container timeline-theme-2">
+            <div class="timeline timeline-small-box timeline-3">
+                <div class="theme-2 box-item" data-time="2008">1</div>
+                <div class="theme-6 box-item" data-time="2009">2</div>
+                <div class="theme-4 box-item" data-time="2010">3</div>
+                <div class="theme-1 box-item" data-time="2011">4</div>
+                <div class="theme-5 box-item" data-time="2012">5</div>
+                <div class="theme-1 box-item" data-time="2013">6</div>
+                <div class="theme-3 box-item" data-time="2014">7</div>
+                <div class="theme-4 box-item" data-time="2015">8</div>
+                <div class="theme-6 box-item" data-time="2016">9</div>
+                <div class="theme-3 box-item" data-time="2017">10</div>
+            </div>
+        </div>
+        <br />
+        <br />
     </div>
 
 <footer class="container-fluid text-center bg-dark text-light">
@@ -90,6 +109,7 @@
             CIFP MAJADA MARCIAL
         </div>
     </footer>
+    <script src="js/timeline.js"></script>
 <script>
     function cambiarHome(){
         document.getElementById("carouselExampleIndicators").style=""
@@ -125,6 +145,24 @@
     scale: true,                       // You can toggle the scaling effect here as well. The default value is true.
     outAnimation: true                 // In case you do not want the out animation, you can toggle this to false. The defaul value is true.
   });
+  $(function(){
+				// Demo 1
+				$('.timeline-1').Timeline();
+
+
+				// Demo 2
+				$('.timeline-2').Timeline({
+					itemClass: 'box-item',
+					dotsPosition: 'top',
+					startItem: 'last'
+				});
+
+				// Demo 3
+				$('.timeline-3').Timeline({
+					mode: 'vertical',
+					itemClass: 'box-item'
+				});
+			});
 </script>
 </body>
 </html>
