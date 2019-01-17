@@ -493,8 +493,3 @@
         return this;
     };
 }(jQuery));
-$(document).ready(function () {
-    $('img.replace').svgmagic({
-        forceReplacements: true
-    });
-});
