@@ -7,7 +7,8 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>  
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
   <script type="text/javascript" src="js/jquery.tiltedpage-scroll.js"></script>
   <link rel="stylesheet" href="css/timeline.css">
   <link rel="stylesheet" href="css/demo.css">
@@ -51,7 +52,7 @@
             <div class="carousel-item">
                 <img class="d-block w-100" src="imagenes/imagen2.jpg" alt="Second slide">
             </div>
-            <div class="carousel-item">
+            <div class="carousel-item">                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      
                 <img class="d-block w-100" src="imagenes/imagen3.jpg" alt="Third slide">
             </div>
         </div>
@@ -65,21 +66,28 @@
         </a>
     </div>
     <div id="contenido1" class="navContent" style="display: none;">
-        hola1
+        <img class='replace' src='https://dirkgroenen.github.io/SVGMagic/style/resizeicon_4.svg'>
+            <a href='#' onclick="$('img').animate({height: '50px', width: '50px'});return false;">50%</a> 
+            <a href='#' onclick="$('img').animate({height: '108px', width: '108px'});return false;">100%</a> 
+            <a href='#' onclick="$('img').animate({height: '250px', width: '250px'});return false;">250%</a>
     </div>
 
     <div id="contenido2" class="navContent" style="display: none;">
         <div class="main" style="text-align: center">
             <section class="page1">
                 <video width="80%" height="600" controls>
-                    <source src="video/HA-ASH - 30 de Febrero.mp4" type="video/mp4">
+                    <source src="video/HA ASH   30 de Febrero (Lyric Video) ft Abraham Mateo.mp4" type="video/mp4">
                 </video>
             </section>
             <section class="page2">
-                <img src="imagenes/imagen1.jpg">
+                <video width="80%" height="600" controls>
+                    <source src="video/The Strumbellas   Spirits.mp4" type="video/mp4">
+                </video>
             </section>
             <section class="last-page">
-                <img src="imagenes/imagen1.jpg">
+                <video width="80%" height="600" controls>
+                    <source src="video/Melendi con Alejandro Sanz u0026 Arkano   Déjala Que Baile.mp4" type="video/mp4">
+                </video>
             </section>
         </div>
     </div>
@@ -87,27 +95,100 @@
     <div id="contenido3" class="navContent" style="display: none;">
         <div class="timeline-container timeline-theme-2">
             <div class="timeline timeline-small-box timeline-3">
-                <div class="theme-2 box-item" data-time="2008">1</div>
-                <div class="theme-6 box-item" data-time="2009">2</div>
-                <div class="theme-4 box-item" data-time="2010">3</div>
-                <div class="theme-1 box-item" data-time="2011">4</div>
-                <div class="theme-5 box-item" data-time="2012">5</div>
-                <div class="theme-1 box-item" data-time="2013">6</div>
-                <div class="theme-3 box-item" data-time="2014">7</div>
-                <div class="theme-4 box-item" data-time="2015">8</div>
-                <div class="theme-6 box-item" data-time="2016">9</div>
-                <div class="theme-3 box-item" data-time="2017">10</div>
+                <div class="theme-3 box-item" data-time="2008">
+                    <br />
+                    <h2>El canto del Loco: Eres tonto</h2>
+                    <br />
+                    <audio controls>
+                        <source src="audio/El Canto del Loco   Eres Tonto   La Historia Fría Cosas.mp3" type="audio/mp3">
+                    </audio>
+                </div>
+                <div class="theme-6 box-item" data-time="2009">
+                    <br />
+                    <h2>Black Eyed Peas: I Gotta Feeling</h2>
+                    <br />
+                    <audio controls>
+                        <source src="audio/The Black Eyed Peas   I Gotta Feeling (Official Music Video).mp3" type="audio/mp3">
+                    </audio>
+                </div>
+                <div class="theme-4 box-item" data-time="2010">
+                    <br />
+                    <h2>Katy Perry: Firework</h2>
+                    <br />
+                    <audio controls>
+                        <source src="audio/Katy Perry   Firework (Official).mp3" type="audio/mp3">
+                    </audio>
+                </div>
+                <div class="theme-1 box-item" data-time="2011">
+                    <br />
+                    <h2>Adele: Someone Like You</h2>
+                    <br />
+                    <audio controls>
+                        <source src="audio/Adele   Someone Like You.mp3" type="audio/mp3">
+                    </audio>
+                </div>
+                <div class="theme-5 box-item" data-time="2012">
+                    <br />
+                    <h2>Cali y El Dandee: Yo te Esperaré</h2>
+                    <br />
+                    <audio controls>
+                        <source src="audio/Cali Y El Dandee   Yo Te Esperaré.mp3" type="audio/mp3">
+                    </audio>
+                </div>
+                <div class="theme-1 box-item" data-time="2013">
+                    <br />
+                    <h2>Robin Thicke: Blurred Lines</h2>
+                    <br />
+                    <audio controls>
+                        <source src="audio/Robin Thicke   Blurred Lines ft TI, Pharrell.mp3" type="audio/mp3">
+                    </audio>
+                </div>
+                <div class="theme-3 box-item" data-time="2014">
+                    <br />
+                    <h2>Enrique Iglesias: Bailando</h2>
+                    <br />
+                    <audio controls>
+                        <source src="audio/Enrique Iglesias   Bailando ft Descemer Bueno, Gente De Zona (Español).mp3" type="audio/mp3">
+                    </audio>
+                </div>
+                <div class="theme-4 box-item" data-time="2015">
+                    <br />
+                    <h2>Wiz Khalifa: See you Again</h2>
+                    <br />
+                    <audio controls>
+                        <source src="audio/Wiz Khalifa   See You Again ft Charlie Puth [Official Video] Furious 7 Soundtrack.mp3 type="audio/mp3">
+                    </audio>
+                </div>
+                <div class="theme-6 box-item" data-time="2016">
+                    <br />
+                    <h2>Gente de Zona: La Gozadera</h2>
+                    <br />
+                    <audio controls>
+                        <source src="audio/Gente de Zona   La Gozadera (Official Music Video) ft Marc Anthony.mp3" type="audio/mp3">
+                    </audio>
+                </div>
+                <div class="theme-3 box-item" data-time="2017">
+                    <br />
+                    <h2>Luis Fonsi: Despacito</h2>
+                    <br />
+                    <audio controls>
+                        <source src="audio/Luis Fonsi   Despacito ft Daddy Yankee.mp3" type="audio/mp3">
+                    </audio>
+                </div>
+                <div class="theme-5 box-item" data-time="2018">
+                    <br />
+                    <h2>Luis Fonsi: Imposible</h2>
+                    <br />
+                    <audio controls>
+                        <source src="audio/Luis Fonsi, Ozuna   Imposible (Official Video).mp3" type="audio/mp3">
+                    </audio>
+                </div>
             </div>
         </div>
         <br />
         <br />
     </div>
-    <div>
-	<img class='replace' src='https://dirkgroenen.github.io/SVGMagic/style/resizeicon_4.svg'>
-        <a href='#' onclick="$('img').animate({height: '50px', width: '50px'});return false;">50%</a> 
-        <a href='#' onclick="$('img').animate({height: '108px', width: '108px'});return false;">100%</a> 
-        <a href='#' onclick="$('img').animate({height: '250px', width: '250px'});return false;">250%</a>
-    </div>
+
 <footer class="container-fluid text-center bg-dark text-light">
         <div>
             Alejandro Quintana Mateo & Irene Caubín Alonso
@@ -152,28 +233,26 @@
     outAnimation: true                 // In case you do not want the out animation, you can toggle this to false. The defaul value is true.
   });
   $(function(){
-				// Demo 1
-				$('.timeline-1').Timeline();
+	// Demo 1
+	$('.timeline-1').Timeline();
+	// Demo 2
+	$('.timeline-2').Timeline({
+		itemClass: 'box-item',
+		dotsPosition: 'top',
+		startItem: 'last'
+	});
 
-
-				// Demo 2
-				$('.timeline-2').Timeline({
-					itemClass: 'box-item',
-					dotsPosition: 'top',
-					startItem: 'last'
-				});
-
-				// Demo 3
-				$('.timeline-3').Timeline({
-					mode: 'vertical',
-					itemClass: 'box-item'
-				});
-			});
-	$(document).ready(function () {
-            $('img.replace').svgmagic({
-                forceReplacements: true
-            });
-        });
+	// Demo 3
+	$('.timeline-3').Timeline({
+		mode: 'vertical',
+		itemClass: 'box-item'
+	});
+  });
+  $(document).ready(function () {
+    $('img.replace').svgmagic({
+        forceReplacements: true
+    });
+  });
 </script>
 </body>
 </html>
