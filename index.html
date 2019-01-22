@@ -12,7 +12,6 @@
   <script src="js/jquery.tiltedpage-scroll.js"></script>
   <link rel="stylesheet" href="css/timeline.css">
   <link rel="stylesheet" href="css/demo.css">
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
   <script src="js/jquery.svgmagic.js"></script>
 </head>
 <body>
@@ -67,10 +66,10 @@
         </a>
     </div>
     <div id="contenido1" class="navContent" style="display: none;">
-        <img class='replace' alt='resize' src='https://dirkgroenen.github.io/SVGMagic/style/resizeicon_4.svg'>
-            <a href='#' onclick="$('img').animate({height: '50px', width: '50px'});return false;">50%</a> 
-            <a href='#' onclick="$('img').animate({height: '108px', width: '108px'});return false;">100%</a> 
-            <a href='#' onclick="$('img').animate({height: '250px', width: '250px'});return false;">250%</a>
+        <img class='replace' alt='resize' id='magic' src='https://dirkgroenen.github.io/SVGMagic/style/resizeicon_4.svg'>
+            <a href='#' onclick="$(document.getElementById('magic')).animate({height: '50px', width: '50px'});return false;">50%</a> 
+            <a href='#' onclick="$(document.getElementById('magic')).animate({height: '108px', width: '108px'});return false;">100%</a> 
+            <a href='#' onclick="$(document.getElementById('magic')).animate({height: '250px', width: '250px'});return false;">250%</a>
     </div>
 
     <div id="contenido2" class="navContent" style="display: none;">
